@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Spyder/Jupyter
+.spyderproject
+.spyproject
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Generated outputs
+*.png
+*.csv
+*.html
