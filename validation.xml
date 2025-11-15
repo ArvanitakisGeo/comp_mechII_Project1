@@ -3,13 +3,13 @@
   <Module type="heat conduction"/>
   <Globals>
     <Constants>
-      <heat_capacity>2.5</heat_capacity>
+      <heat_capacity>1.5</heat_capacity>
     </Constants>
   </Globals>
   
   <Materials>
     <Material id="1" name="Steel">
-      <conductivity>2.5</conductivity>
+      <conductivity>1.5</conductivity>
     </Material>
   </Materials>
   

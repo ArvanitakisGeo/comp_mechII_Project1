@@ -23,6 +23,13 @@ plot_mesh_interactive(nodes, elems, show=True, filename='interactive_mesh3.html'
 # Assemble global
 K = assemble_global(nodes, elems, k=k)
 
+# # Apply BCs
+# bc_nodes = [node for node, val in bcs['temperature']]
+# bc_values = [val for node, val in bcs['temperature']]
+# Kmod, fmod = apply_dirichlet(K, np.zeros(nodes.shape[0]), bc_nodes, bc_values)
+# fmod       = apply_heat_flux(fmod, nodes, elems, bc_values)
+# Kmod, fmod = apply_convection(K, fmod, nodes, elems, bc_values)
+
 # Apply BCs
 
 # Dirichlet
@@ -36,6 +43,7 @@ bc_conv = [(elem_id, edge_id, h, Tinf)
 # Heat flux (Neumann): (elem_id, edge_id, q)
 bc_heat_flux = [(elem_id, edge_id, q)
                  for (elem_id, edge_id, q) in bcs.get('heat_flux', [])]
+
 f0 = np.zeros(nodes.shape[0])
 
 # 1) Convection
