@@ -15,20 +15,13 @@ from PostProcessor import export_temperature_csv
 
 
 # Import model info
-nodes, elems, materials, k, bcs = read_input_file('validation.xml')
+nodes, elems, materials, k, bcs = read_input_file('chimney.semfe')
 
 # Check Mesh Quality
-plot_mesh_interactive(nodes, elems, show=True, filename='interactive_mesh3.html')
+plot_mesh_interactive(nodes, elems, show=True, filename='interactive_chimney.html')
 
 # Assemble global
 K = assemble_global(nodes, elems, k=k)
-
-# # Apply BCs
-# bc_nodes = [node for node, val in bcs['temperature']]
-# bc_values = [val for node, val in bcs['temperature']]
-# Kmod, fmod = apply_dirichlet(K, np.zeros(nodes.shape[0]), bc_nodes, bc_values)
-# fmod       = apply_heat_flux(fmod, nodes, elems, bc_values)
-# Kmod, fmod = apply_convection(K, fmod, nodes, elems, bc_values)
 
 # Apply BCs
 
@@ -62,5 +55,5 @@ Kmod, fmod = apply_dirichlet(K1, f2, bc_nodes, bc_values)
 u = solve_system(Kmod, fmod)
 
 # Call it in main
-plot_temperature_field(nodes, elems, u, filename='temperature_field.png')
+plot_temperature_field(nodes, elems, u, filename='chimney_temperature_field.png')
 export_temperature_csv(nodes, u)

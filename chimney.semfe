@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<SEMFE_spec>
+  <Module type="heat conduction"/>
+  <Globals>
+    <Constants>
+      <heat_capacity>2.5</heat_capacity>
+    </Constants>
+  </Globals>
+
+  <Materials>
+    <Material id="1" name="Brick">
+      <conductivity>1.0</conductivity>
+    </Material>
+  </Materials>
+
+  <Geometry>
+    <Nodes>
+      <node id="1" x="0.000000" y="0.000000" z="0.0"/>
+      <node id="2" x="0.100000" y="0.000000" z="0.0"/>
+      <node id="3" x="0.200000" y="0.000000" z="0.0"/>
+      <node id="4" x="0.300000" y="0.000000" z="0.0"/>
+      <node id="5" x="0.400000" y="0.000000" z="0.0"/>
+      <node id="6" x="0.500000" y="0.000000" z="0.0"/>
+      <node id="7" x="0.600000" y="0.000000" z="0.0"/>
+      <node id="8" x="0.700000" y="0.000000" z="0.0"/>
+      <node id="9" x="0.800000" y="0.000000" z="0.0"/>
+      <node id="10" x="0.000000" y="0.100000" z="0.0"/>
+      <node id="11" x="0.100000" y="0.100000" z="0.0"/>
+      <node id="12" x="0.200000" y="0.100000" z="0.0"/>
+      <node id="13" x="0.300000" y="0.100000" z="0.0"/>
+      <node id="14" x="0.400000" y="0.100000" z="0.0"/>
+      <node id="15" x="0.500000" y="0.100000" z="0.0"/>
+      <node id="16" x="0.600000" y="0.100000" z="0.0"/>
+      <node id="17" x="0.700000" y="0.100000" z="0.0"/>
+      <node id="18" x="0.800000" y="0.100000" z="0.0"/>
+      <node id="19" x="0.000000" y="0.200000" z="0.0"/>
+      <node id="20" x="0.100000" y="0.200000" z="0.0"/>
+      <node id="21" x="0.200000" y="0.200000" z="0.0"/>
+      <node id="22" x="0.300000" y="0.200000" z="0.0"/>
+      <node id="23" x="0.400000" y="0.200000" z="0.0"/>
+      <node id="24" x="0.500000" y="0.200000" z="0.0"/>
+      <node id="25" x="0.600000" y="0.200000" z="0.0"/>
+      <node id="26" x="0.700000" y="0.200000" z="0.0"/>
+      <node id="27" x="0.800000" y="0.200000" z="0.0"/>
+      <node id="28" x="0.000000" y="0.300000" z="0.0"/>
+      <node id="29" x="0.100000" y="0.300000" z="0.0"/>
+      <node id="30" x="0.200000" y="0.300000" z="0.0"/>
+      <node id="31" x="0.600000" y="0.300000" z="0.0"/>
+      <node id="32" x="0.700000" y="0.300000" z="0.0"/>
+      <node id="33" x="0.800000" y="0.300000" z="0.0"/>
+      <node id="34" x="0.000000" y="0.400000" z="0.0"/>
+      <node id="35" x="0.100000" y="0.400000" z="0.0"/>
+      <node id="36" x="0.200000" y="0.400000" z="0.0"/>
+      <node id="37" x="0.300000" y="0.400000" z="0.0"/>
+      <node id="38" x="0.400000" y="0.400000" z="0.0"/>
+      <node id="39" x="0.500000" y="0.400000" z="0.0"/>
+      <node id="40" x="0.600000" y="0.400000" z="0.0"/>
+      <node id="41" x="0.700000" y="0.400000" z="0.0"/>
+      <node id="42" x="0.800000" y="0.400000" z="0.0"/>
+      <node id="43" x="0.000000" y="0.500000" z="0.0"/>
+      <node id="44" x="0.100000" y="0.500000" z="0.0"/>
+      <node id="45" x="0.200000" y="0.500000" z="0.0"/>
+      <node id="46" x="0.300000" y="0.500000" z="0.0"/>
+      <node id="47" x="0.400000" y="0.500000" z="0.0"/>
+      <node id="48" x="0.500000" y="0.500000" z="0.0"/>
+      <node id="49" x="0.600000" y="0.500000" z="0.0"/>
+      <node id="50" x="0.700000" y="0.500000" z="0.0"/>
+      <node id="51" x="0.800000" y="0.500000" z="0.0"/>
+      <node id="52" x="0.000000" y="0.600000" z="0.0"/>
+      <node id="53" x="0.100000" y="0.600000" z="0.0"/>
+      <node id="54" x="0.200000" y="0.600000" z="0.0"/>
+      <node id="55" x="0.300000" y="0.600000" z="0.0"/>
+      <node id="56" x="0.400000" y="0.600000" z="0.0"/>
+      <node id="57" x="0.500000" y="0.600000" z="0.0"/>
+      <node id="58" x="0.600000" y="0.600000" z="0.0"/>
+      <node id="59" x="0.700000" y="0.600000" z="0.0"/>
+      <node id="60" x="0.800000" y="0.600000" z="0.0"/>
+    </Nodes>
+
+    <Elements type="tri3" name="mesh">
+      <elem id="1">1 2 10</elem>
+      <elem id="2">2 11 10</elem>
+      <elem id="3">2 3 11</elem>
+      <elem id="4">3 12 11</elem>
+      <elem id="5">3 4 12</elem>
+      <elem id="6">4 13 12</elem>
+      <elem id="7">4 5 13</elem>
+      <elem id="8">5 14 13</elem>
+      <elem id="9">5 6 14</elem>
+      <elem id="10">6 15 14</elem>
+      <elem id="11">6 7 15</elem>
+      <elem id="12">7 16 15</elem>
+      <elem id="13">7 8 16</elem>
+      <elem id="14">8 17 16</elem>
+      <elem id="15">8 9 17</elem>
+      <elem id="16">9 18 17</elem>
+      <elem id="17">10 11 19</elem>
+      <elem id="18">11 20 19</elem>
+      <elem id="19">11 12 20</elem>
+      <elem id="20">12 21 20</elem>
+      <elem id="21">12 13 21</elem>
+      <elem id="22">13 22 21</elem>
+      <elem id="23">13 14 22</elem>
+      <elem id="24">14 23 22</elem>
+      <elem id="25">14 15 23</elem>
+      <elem id="26">15 24 23</elem>
+      <elem id="27">15 16 24</elem>
+      <elem id="28">16 25 24</elem>
+      <elem id="29">16 17 25</elem>
+      <elem id="30">17 26 25</elem>
+      <elem id="31">17 18 26</elem>
+      <elem id="32">18 27 26</elem>
+      <elem id="33">19 20 28</elem>
+      <elem id="34">20 29 28</elem>
+      <elem id="35">20 21 29</elem>
+      <elem id="36">21 30 29</elem>
+      <elem id="37">25 26 31</elem>
+      <elem id="38">26 32 31</elem>
+      <elem id="39">26 27 32</elem>
+      <elem id="40">27 33 32</elem>
+      <elem id="41">28 29 34</elem>
+      <elem id="42">29 35 34</elem>
+      <elem id="43">29 30 35</elem>
+      <elem id="44">30 36 35</elem>
+      <elem id="45">31 32 40</elem>
+      <elem id="46">32 41 40</elem>
+      <elem id="47">32 33 41</elem>
+      <elem id="48">33 42 41</elem>
+      <elem id="49">34 35 43</elem>
+      <elem id="50">35 44 43</elem>
+      <elem id="51">35 36 44</elem>
+      <elem id="52">36 45 44</elem>
+      <elem id="53">36 37 45</elem>
+      <elem id="54">37 46 45</elem>
+      <elem id="55">37 38 46</elem>
+      <elem id="56">38 47 46</elem>
+      <elem id="57">38 39 47</elem>
+      <elem id="58">39 48 47</elem>
+      <elem id="59">39 40 48</elem>
+      <elem id="60">40 49 48</elem>
+      <elem id="61">40 41 49</elem>
+      <elem id="62">41 50 49</elem>
+      <elem id="63">41 42 50</elem>
+      <elem id="64">42 51 50</elem>
+      <elem id="65">43 44 52</elem>
+      <elem id="66">44 53 52</elem>
+      <elem id="67">44 45 53</elem>
+      <elem id="68">45 54 53</elem>
+      <elem id="69">45 46 54</elem>
+      <elem id="70">46 55 54</elem>
+      <elem id="71">46 47 55</elem>
+      <elem id="72">47 56 55</elem>
+      <elem id="73">47 48 56</elem>
+      <elem id="74">48 57 56</elem>
+      <elem id="75">48 49 57</elem>
+      <elem id="76">49 58 57</elem>
+      <elem id="77">49 50 58</elem>
+      <elem id="78">50 59 58</elem>
+      <elem id="79">50 51 59</elem>
+      <elem id="80">51 60 59</elem>
+    </Elements>
+  </Geometry>
+
+  <BoundaryConditions>
+    <Boundary>
+      <temperature node="21" value="100.0"/>
+      <temperature node="22" value="100.0"/>
+      <temperature node="23" value="100.0"/>
+      <temperature node="24" value="100.0"/>
+      <temperature node="25" value="100.0"/>
+      <temperature node="30" value="100.0"/>
+      <temperature node="31" value="100.0"/>
+      <temperature node="36" value="100.0"/>
+      <temperature node="37" value="100.0"/>
+      <temperature node="38" value="100.0"/>
+      <temperature node="39" value="100.0"/>
+      <temperature node="40" value="100.0"/>
+      <temperature node="52" value="30.0"/>
+      <temperature node="53" value="30.0"/>
+      <temperature node="54" value="30.0"/>
+      <temperature node="55" value="30.0"/>
+      <temperature node="56" value="30.0"/>
+      <temperature node="57" value="30.0"/>
+      <temperature node="58" value="30.0"/>
+      <temperature node="59" value="30.0"/>
+      <temperature node="60" value="30.0"/>
+    </Boundary>
+
+    <HeatFlux>
+      <flux elem="1" edge="1" value="0.0"/>
+      <flux elem="3" edge="1" value="0.0"/>
+      <flux elem="5" edge="1" value="0.0"/>
+      <flux elem="7" edge="1" value="0.0"/>
+      <flux elem="9" edge="1" value="0.0"/>
+      <flux elem="11" edge="1" value="0.0"/>
+      <flux elem="13" edge="1" value="0.0"/>
+      <flux elem="15" edge="1" value="0.0"/>
+    </HeatFlux>
+
+    <Convection>
+      <conv elem="16" edge="1" h="25" Tinf="25.0"/>
+      <conv elem="32" edge="1" h="25" Tinf="25.0"/>
+      <conv elem="40" edge="1" h="25" Tinf="25.0"/>
+      <conv elem="48" edge="1" h="25" Tinf="25.0"/>
+      <conv elem="64" edge="1" h="25" Tinf="25.0"/>
+      <conv elem="80" edge="1" h="25" Tinf="25.0"/>
+    </Convection>
+  </BoundaryConditions>
+
+  <Step name="step1" type="steady-state">
+    <HeatSource>
+    </HeatSource>
+  </Step>
+</SEMFE_spec>
